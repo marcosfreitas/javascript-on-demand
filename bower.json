@@ -1,0 +1,24 @@
+{
+  "name": "cbl",
+  "version": "2.0.0",
+  "authors": [
+    "Marcos Freitas <marcos@okn.com.br>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "Copyright 2017 OKN",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "headjs": "^1.0.3"
+  },
+  "devDependencies": {
+  }
+}
