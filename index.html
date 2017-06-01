@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<script src="assets/vendor/headjs/dist/1.0.0/head.load.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script>
+		var app = new  App({
+			host : "localhost/Projects/okn/javascript-on-demand/",
+			assets : 'assets/',
+			api : 'api/'
+		});
+	</script>
+</head>
+<body>
+	<style>
+		body {
+			padding-top: 50px;
+			font-family: sans-serif;
+		}
+		section {
+			color: #fff;
+			width: 400px;
+			height: 50px;
+			padding: 20px;
+			margin: 10px auto;
+			text-align:center;
+		}
+	</style>
+	<section id="s01">
+		bloco 1
+	</section>
+
+	<section id="s02">
+		bloco 2
+	</section>
+
+	<script>
+		app.setInstances([
+			"jQuery('#s01').css({'background':'#9b59b6'});",
+			"jQuery('#s02').css({'background':'#2980b9'});"
+		]);
+
+		app.setVendors([
+			'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'
+		]);
+	</script>
+
+	<script>
+
+		if (typeof head === 'function' && typeof App === 'function' && typeof app !== 'undefined') {
+
+			head.load(app.getVendors(), function() {
+
+				eval(app.getInstances());
+
+			});
+
+		}
+	</script>
+
+</body>
+</html>
