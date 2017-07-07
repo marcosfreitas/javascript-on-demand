@@ -1,4 +1,4 @@
-#Javascript On Demand with HeadJS
+# Javascript On Demand with HeadJS
  
 >Checkout **index.html** with this example bellow.
  
