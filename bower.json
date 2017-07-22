@@ -1,12 +1,12 @@
 {
-  "name": "cbl",
-  "version": "2.0.0",
+  "name": "javascript-on-demand",
+  "version": "2.0.1",
   "authors": [
-    "Marcos Freitas <marcos@okn.com.br>"
+    "Marcos Freitas <marcosfreitas@c4network.com.br>"
   ],
   "description": "",
   "main": "",
-  "license": "Copyright 2017 OKN",
+  "license": "MIT",
   "homepage": "",
   "private": true,
   "ignore": [
