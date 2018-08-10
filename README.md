@@ -1,4 +1,4 @@
-# Javascript On Demand with HeadJS
+# [3.0.0] Javascript On Demand with HeadJS
  
 >Checkout **index.html** with this example bellow.
  
@@ -13,21 +13,11 @@
 ```javascript
 var app = {
   protocol : "",
-  host : "",
-  api : "",
-  assets : "",
+  host : "localhost",
   // You can define default instances or vendors to load in every page filling this next parameters
   instances : [],
   vendors : []
 };
-```
-```javascript
-var app = new  App({
-  host : "localhost/Projects/okn/javascript-on-demand/",
-  assets : 'assets/',
-  api : 'api/'
-});
-```
  
 3. In each page of your site, you can define those scripts to load or call by instances, like this:
 
@@ -42,6 +32,8 @@ app.setVendors([
    'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'
 ]);
 ```
+
+**each vendor entry URL, if it isn't a valid URL, is adjusted to a complete URL, so 'assets/js/main.js' will be transformed to 'http://localhost/assets/js/main.js'**
  
 4. At least, if you have a footer that repeats in everything, put it there just before the **<\/body>**.
 >This code will load every instance and vendor that you had set.
