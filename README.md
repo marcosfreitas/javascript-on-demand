@@ -33,7 +33,7 @@ app.setVendors([
 ]);
 ```
 
-*each vendor entry URL, if it isn't a valid URL, is adjusted to a complete URL, so 'assets/js/.mains' will be transformed to 'http://localhost/assets/js/main.js'*
+**each vendor entry URL, if it isn't a valid URL, is adjusted to a complete URL, so 'assets/js/main.js' will be transformed to 'http://localhost/assets/js/main.js'**
  
 4. At least, if you have a footer that repeats in everything, put it there just before the **<\/body>**.
 >This code will load every instance and vendor that you had set.
