@@ -1,4 +1,4 @@
-# [3.0.0] Javascript On Demand with HeadJS
+# [3.0.1] Javascript On Demand with HeadJS
  
 >Checkout **index.html** with this example bellow.
  
