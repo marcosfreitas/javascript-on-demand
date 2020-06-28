@@ -40,8 +40,8 @@ app.setVendors([
 
 ```javascript
 if (typeof head === 'function' && typeof App === 'function' && typeof app !== 'undefined') {
-    head.load(app.getVendors(), function() {
-    eval(app.getInstances());
-  });
+	head.load(app.getVendors(), function() {
+		console.table(app.getVendors());
+	});
 }
 ```
